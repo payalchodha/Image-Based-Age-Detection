@@ -14,7 +14,7 @@ How to predict the age of a person from his or her facial attributes?
 ## Directory Links
 * [Initial EDA](https://github.com/payalchodha/Image-Based-Age-Detection/blob/master/Initial%20EDA.ipynb)
 * [Flask](https://github.com/payalchodha/Image-Based-Age-Detection/tree/master/Flask)
-* 
+* [Trained_Models](https://github.com/payalchodha/Image-Based-Age-Detection/tree/master/Trained-Models)
 ## Image Processing Overview
 
   * Displaying 
@@ -51,6 +51,37 @@ How to predict the age of a person from his or her facial attributes?
  5. Most of the images were not of a very good quality.
  
  I used Image generator to pass the images with some fixed attributes, and used the image resize and resized all my images to (64,64) and also changed the images to grayscale and saved them in a numpy array.
+ 
+ ## Model Training
+I trained four models :
+1. Sequential model with no regularization.(overfit)
+2. Convolutional Neural Network model(CNN) with class weights to deal with the unbalanced classes.(highly overfit)
+3. Convolutional Neural Network model(CNN) with class weights and regularization to deal with overfitting.(slightly overfit)
+4. Implemented Transfer learning through Pretrained model VGG19 as base and then defined the final layers.
+
+Once I had my best model(Pretrained one) I made a confusion matrix(the confusion gives the clearest visualization of how the model treats each class in the data). And then I saw the missclassified images. 
+
+## User Interface Demonstration APP
+## Framework
+Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.
+
+# Demonstration of the tool
+ 
+  ![grab-landing-page](https://git.generalassemb.ly/bethpadera-GA/CHI-DSI9-TEAM-FLOOD/blob/master/app-final-gif.gif)
+  
+  # Challenges
+* Inability to find news sources documentation flood events before.
+  some of the challenges presented in accomplishing this task was finding pertinent news articles published in the last ten   years. As our searches went back in time, less information was available online relating to flood events; because of this,   our data is unevenly distributed in relation to the dates which floods occurred
+* Trying to verify the articles we did find— we did find a potentially meaningful source in the India Meteorological      Department (IMD). However, the data needs to be purchased. 
+
+# Next Steps 
+ * Having a paid version of a news API would have helped acquire more online data sources as well as going further back in time. 
+* Expanding beyond Punjab to other regions but also continue growing the dataset about punjab india so it continues to be relevant and informative.This could be done by setting up a scheduled script (ie CRON) to take in all news posts on a certain schedule.
+* If we had more time we would have manually read through the sentences and verify if they were categories correctly through the keyword lists.  This would help make sure the correct information is being displayed. Spend more time to manually checking all the articles if they made sense to be initially pulled ( some sentences and articles were checked manually) This is a time and labor-intensive task since this currently has to be done  by human inspection. 
+* Further work could include categorizing the sentences by how important they are in the information they provide — a model could potentially be built to classify sentences as relevant vs non-relevant to the category they are in and then therefore show how important the information they provide is. This could be another filter added to the SQL database as a way to organize how the sentences are displayed(first would be dates).
+
+
+
     
 
 
