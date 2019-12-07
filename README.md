@@ -65,20 +65,29 @@ Once I had my best model(Pretrained one) I made a confusion matrix(the confusion
 ## Framework
 Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.
 
-# Demonstration of the tool
+## Demonstration of the tool
  
-  ![grab-landing-page](https://git.generalassemb.ly/bethpadera-GA/CHI-DSI9-TEAM-FLOOD/blob/master/app-final-gif.gif)
+  ![grab-landing-page](https://github.com/payalchodha/Image-Based-Age-Detection/blob/master/age_detection_app.gif)
   
-  # Challenges
-* Inability to find news sources documentation flood events before.
-  some of the challenges presented in accomplishing this task was finding pertinent news articles published in the last ten   years. As our searches went back in time, less information was available online relating to flood events; because of this,   our data is unevenly distributed in relation to the dates which floods occurred
-* Trying to verify the articles we did find— we did find a potentially meaningful source in the India Meteorological      Department (IMD). However, the data needs to be purchased. 
+## Challenges
+* The classes were pretty unbalanced.
+* Image Quality was very bad for most of the images.
+* There were multiple viewpoints.
 
-# Next Steps 
- * Having a paid version of a news API would have helped acquire more online data sources as well as going further back in time. 
-* Expanding beyond Punjab to other regions but also continue growing the dataset about punjab india so it continues to be relevant and informative.This could be done by setting up a scheduled script (ie CRON) to take in all news posts on a certain schedule.
-* If we had more time we would have manually read through the sentences and verify if they were categories correctly through the keyword lists.  This would help make sure the correct information is being displayed. Spend more time to manually checking all the articles if they made sense to be initially pulled ( some sentences and articles were checked manually) This is a time and labor-intensive task since this currently has to be done  by human inspection. 
-* Further work could include categorizing the sentences by how important they are in the information they provide — a model could potentially be built to classify sentences as relevant vs non-relevant to the category they are in and then therefore show how important the information they provide is. This could be another filter added to the SQL database as a way to organize how the sentences are displayed(first would be dates).
+## Next Steps 
+ 
+* Gathering more data to fix the unbalanced classes problem.
+
+* Try more pretrained models may be Inception.
+
+* From here on I can also incorporate gender, emotion detection and object detection in the same model and create a fully functional application.
+
+## Further Improvements for the Web App
+ * Deploy as a stand-alone app
+ * Collaborate with UX/Web-dev teams to enhance user experience
+ 
+## [Slide Deck Link](https://docs.google.com/presentation/d/1g8FuPDHm3kfxBARY4-SHFL0coee48p5N9X_HG8qpklE/edit#slide=id.g75cd4281fe_0_105
+)
 
 
 
