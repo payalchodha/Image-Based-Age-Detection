@@ -87,7 +87,7 @@ Flask is a micro web framework written in Python. It is classified as a microfra
  * Collaborate with UX/Web-dev teams to enhance user experience
  
 ## [Slide Deck Link]
-(https://docs.google.com/presentation/d/1g8FuPDHm3kfxBARY4-SHFL0coee48p5N9X_HG8qpklE/edit#slide=id.g75cd4281fe_0_105
+(https://docs.google.com/presentation/d/1g8FuPDHm3kfxBARY4-SHFL0coee48p5N9X_HG8qpklE/edit?usp=sharing
 )
 
 
